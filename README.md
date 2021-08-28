@@ -3,6 +3,9 @@
 ## Summary
 Deep learning (DL) training is nondeterministic: both the DL algorithm and DL software implementation introduce nondeterminism to improvetraining  efficiency  and  model  accuracy.    Prior work shows  that both types  of nondeterminismcause significant variance of model accuracy (upto  10.8%)  and  training  time  between  identicaltraining runs.  Such variance may affect the validity of new DL techniques proposed in the research community and the validity of the comparison  results  with  baselines.   To  ensure  such validity,  DL  researchers  and  practitioners  must replicate  their  experiments  multiple  times  withidentical settings to quantify the variance of the proposed approaches and baselines.  Replicatingand  measuring  DL  variances  reliably  and  efficiently is challenging and understudied. We propose a ready-to-deploy framework DEVIATE  that  (1)  measures  DL  training  variance  ofa  DL  model  with  minimal  manual  efforts,  and (2) provides statistical tests of both accuracy andvariance.  Specifically, DEVIATE automatically analyzes the DL training code and extracts monitored  important  metrics  (such  as  accuracy  and loss).   In addition,  DEVIATE performs popular statistical tests and provides users with a report of statistical p-values and effect sizes along with various confidence levels when comparing to selected baselines.
 
+## Demo Video
+We have a [demo video](youtube.com/watch?v=OjOkLMlMt08) of the tool where we show some usage of the DEVIATE on the sample project.
+
 ## Usage
 
 ### Dependencies and requirements:
